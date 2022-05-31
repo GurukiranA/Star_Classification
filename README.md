@@ -28,7 +28,7 @@ This is a simple star classification Flask app which is trained on the dataset a
    
      v.) What is the color of the star?                                  
      
-    vi.) What is the Spectral Class of the Star?                         
+    vi.)What is the Spectral Class of the Star?                         
     
     vii.)Mass of the Star                                    
 
