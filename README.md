@@ -30,7 +30,7 @@ This is a simple star classification Flask app which is trained on the dataset a
      
     vi.) What is the Spectral Class of the Star?                         
     
-    vii.) Mass of the Star                                    
+    vii.)Mass of the Star                                    
 
 
    Considering the above parameters, the classification of the stat is shown .
