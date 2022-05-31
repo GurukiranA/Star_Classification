@@ -12,7 +12,7 @@
 
 ## Demo
 
-[https://car-prediction0.herokuapp.com/](https://star-classification.herokuapp.com/)
+[https://star-classification.herokuapp.com/]
 
 ## Brief Summary
 
