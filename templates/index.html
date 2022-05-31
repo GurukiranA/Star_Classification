@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div style="color:blue">
+        <form action="{{ url_for('predict')}}" method="post">
+            <h2>Star Classification</h2>
+            <h3>Temperature</h3><input id="first" name="Temperature" type="number " step=any>
+            <h3>Relative_Luminosity</h3><br><input id="second" name="Relative_Luminosity" required="required" type="number" step=any>
+            <h3>Radius</h3><input id="third" name="Radius" required="required" type="number"step=any>
+            <h3>Absolute Magnitude</h3><br><input id="fourth" name="Absolute_Magnitude" required="required" type="number" step=any>
+            <h3>What Is the Color of the Star?</h3><br><select name="Color" id="Color" required="required">
+                <option value="Blue">Blue</option>
+                <option value="Bluish-White">Bluish-White</option>
+                <option value="Orange">Orange</option>
+                <option value="Orange-Red">Orange-Red</option>
+                <option value="Pale-Yellow-Orange">Pale-Yellow-Orange</option>
+                <option value="Red">Red</option>
+                <option value="White">White</option>
+                <option value="White-Yellow">White-Yellow</option>
+                <option value="Whitish">Whitish</option>
+                <option value="Yellow-White">Yellow-White</option>
+                <option value="Yellowish">Yellowish</option>
+                <option value="Yellowish White">Yellowish White</option>
+            </select>
+            <h3>What is the Spectral Class of the Star</h3><br><select name="Spectral_Class" id="Spectral Class" required="required">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="F">F</option>
+                <option value="G">G</option>
+                <option value="K">K</option>
+                <option value="M">M</option>
+                <option value="O">O</option>
+            </select>
+            <h3>Mass of the Star</h3><input id="mass" name="Mass_of_Star" type="number ">
+            <br><br><button id="sub" type="submit ">Predict the type of the Star</button>
+            <br>
+        </form>
+        <br><br><h3>{{prediction_text}}<h3>
+    </div>
+
+
+
+
+    <style>
+        body {
+            background-color: lightslategray;
+            text-align: center;
+            padding: 0px;
+        }
+        
+        #research {
+            font-size: 18px;
+            width: 100px;
+            height: 23px;
+            top: 23px;
+        }
+        
+        #box {
+            border-radius: 60px;
+            border-color: 45px;
+            border-style: solid;
+            font-family: cursive;
+            text-align: center;
+            background-color: rgb(168, 131, 61);
+            font-size: medium;
+            position: absolute;
+            width: 700px;
+            bottom: 9%;
+            height: 850px;
+            right: 30%;
+            padding: 0px;
+            margin: 0px;
+            font-size: 14px;
+        }
+        
+        #fuel {
+            width: 83px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 20px;
+        }
+        
+        #fuel:hover {
+            background-color: coral;
+        }
+        
+        #research {
+            width: 99px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #research:hover {
+            background-color: coral;
+        }
+        
+        #resea {
+            width: 99px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #resea:hover {
+            background-color: coral;
+        }
+        
+        #sub {
+            width: 120px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #sub:hover {
+            background-color: darkcyan;
+        }
+        
+        #first {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #second {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #third {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #fourth {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</body>
+
+</html>
