@@ -14,7 +14,7 @@
 
 [https://star-classification.herokuapp.com/]
 
-## Brief Summary
+## Brief Summary of Star Classification
 
 This is a simple star classification Flask app which is trained on the dataset available on Kaggle  which takes in the following input parameters like 
 
